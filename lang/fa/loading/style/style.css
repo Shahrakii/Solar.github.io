@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+body {
+    animation: fore-black 3s ease 1;
+    background-color: black;
+    overflow: hidden;
+}
+
+body p {
+    font-family: 'Almarai', sans-serif!important;
+    font-weight: 700;
+}
+
+body a {
+    font-family: 'Almarai', sans-serif!important;
+    font-weight: 700;
+}
+
+@keyframes fore-black {
+    0% {background-color: white;}
+    100% {background-color: black;}
+}
+
+.venus,
+.mercury,
+.earth,
+.mars,
+.jupiter,
+.saturn,
+.uranus,
+.neptone,
+.pluto {
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
+    margin-left: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* animation */
+    animation: to-center 3s linear 1,rotate 5s linear infinite 3s;
+}
+
+.venus {
+    background-image: url(../../../../image/venus.png);
+}
+
+.earth {
+    background-image: url(../../../../image/earth.png);
+}
+
+.mercury {
+    background-image: url(../../../../image/mercury.png);
+}
+
+.mars {
+    background-image: url(../../../../image/mars.png);
+}
+
+.jupiter {
+    background-image: url(../../../../image/jupitar.png);
+}
+
+.saturn {
+    background-image: url(../../../../image/saturn.png);
+    width: 305px;
+    height: 130px;
+    margin-top: 90px;
+    margin-left: 500px;
+}
+
+.uranus {
+    background-image: url(../../../../image/uranus.png);
+    width: 210px;
+    height: 100px;
+    margin-top: 60px;
+}
+
+.neptone {
+    background-image: url(../../../../image/neptune.png);
+}
+
+.pluto {
+    background-image: url(../../../../image/pluto.png);
+}
+
+@keyframes to-center {
+    0% {margin-left: 0px;}
+    100% {margin-left: 580px;}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(720deg);}
+}
+
+nav {
+    background: linear-gradient(to bottom,#00bfff,#0000ff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 100%;
+    opacity: 1;
+
+    animation-name: sideanimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    font-family: 'Righteous', cursive;
+}
+
+@keyframes sideanimation {
+    0% {left: -100%;}
+    100% {left: 0;}
+}
+
+.in-nav div a {
+    text-decoration: none;
+    margin-left: 18%;
+    line-height: 3.7;
+    color: white;
+    cursor: pointer;
+}
+
+.in-nav {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.inside {
+    color: red!important;
+}
+
+p {
+    color: white;
+    width: 40%;
+    padding-top: 2%;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 15%;
+    font-size: 20px;
+
+    animation-name: textanimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin-left: 15%;
+
+    font-family: 'Play', sans-serif;
+}
+
+@keyframes textanimation {
+    0% {margin-top: 1800px;}
+}
+
+.lang {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(270deg);
+    margin-top: 150px;
+    margin-right: -40px;
+    font-family: 'Play', sans-serif;
+
+    animation: langanimation 3s linear 1;
+}
+
+@keyframes langanimation {
+    0% {right: -100px;}
+    100% {right: 0;}
+}
+
+.bold {
+    font-weight: bolder;
+    color: white;
+}
+
+.en {
+    margin-left: 10px;
+}
+
+.lang div a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.in-nav div {
+    display: flex;
+    gap: 10px;
+}
+
+.side-img {
+    height: 20px;
+    width: 20px;
+    padding-top: 10%;
+}
+
+.side-img-fix {
+    padding-top: 10%;
+    width: 40px;
+    height: 17px;
+}
+
+.lang {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(270deg);
+    margin-top: 150px;
+    margin-right: -40px;
+}
+
+.bold {
+    font-weight: bolder;
+    color: white;
+}
+
+.en {
+    margin-left: 10px;
+}
+
+.lang div a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
